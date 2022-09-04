@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Faça um programa para ler 3 valores (considere que não serão informados valores iguais) e escrever o maior deles.
+    </h1>
+    <script>
+        n1 = parseInt(prompt("Escreva o primeiro número: "));
+        n2 = parseInt(prompt("Escreva o segundo número: "));
+        n3 = parseInt(prompt("Escreva o terceiro número: "));
+
+        if(n1 > n2 && n1 > n3)
+        {
+            document.write(n1 + " é o maior número!");
+        }
+        if(n1 < n2 && n2 > n3)
+        {
+            document.write(n2 + " é o maior número!");
+        }
+        if(n3 > n2 && n1 < n3)
+        {
+            document.write(n3 + " é o maior número!");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Escreva um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem que diga se ela poderá ou não votar este ano (não é necessário considerar o mês em que ela nasceu).
+    </h1>
+    <script>
+        num = parseInt(prompt("Digite seu ano de nascimento "));
+        idade = 2022 - num
+        
+        if(idade < 16)
+        {
+            document.write("Você não pode votar.");
+        }
+        else if (idade <= 17 || idade >= 70)
+        {
+            document.write("Seu voto é opcional.");
+        }
+        else
+        {
+            document.write("Seu voto é obrigatório.");
+        }
+    
+    </script>
+</body>
+</html>
